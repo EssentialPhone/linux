@@ -64,6 +64,9 @@
 #include <linux/file.h>
 #include <net/sock.h>
 
+#define CREATE_TRACE_POINTS
+#include <trace/events/cgroup.h>
+
 /*
  * pidlists linger the following amount before being destroyed.  The goal
  * is avoiding frequent destruction in the middle of consecutive read calls
